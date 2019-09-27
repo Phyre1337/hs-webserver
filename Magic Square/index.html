@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<button onClick="window.location.href='../index.html';">Home</button>
+		<title>Magic Square</title>
+		<link rel="stylesheet" href="../style.css">
+		<center><h1 id="l">Welcome to the Magic Square!</h1></center>
+	</head>
+	<body onload="loadMain()">
+		<script type="text/javascript" src="../Scripts/magicsquare.js"></script>
+		<center><h3 id="m">To use the Magic Square, input a number below and hit enter, or click the button below the input box.</h3>
+			<input type="text" id="num" name="num" maxlength="4" size="4" onkeypress="checkEnter(event)" value="0"><br><br>
+			<button onClick="main()">Go!</button>
+			<br>
+			<br>
+			<table class="magicsquare">
+				<tr>
+					<td class="blank"><p>.</p></td>
+					<td class="blank"><p>.</p></td>
+					<td class="blank"><p>.</p></td>
+					<td class="blank"><p>.</p></td>
+					<td class="sum" id="diag1"></td>
+				</tr>
+				<tr>
+					<td class="blank"><p>.</p></td>
+					<th class="th1" id="topleft">0</th>
+					<th class="th1" id="topmid">0</th>
+					<th class="th1" id="topright">0</th>
+					<td class="sum" id="sum1"></td>
+				</tr>
+				<tr>
+					<td class="sum" id="exp"></td>
+					<th class="th1" id="midleft">0</th>
+					<th class="th1" id="mid">0</th>
+					<th class="th1" id="midright">0</th>
+					<td class="sum" id="sum2"></td>
+				</tr>
+				<tr>
+					<td class="blank"><p>.</p></td>
+					<th class="th1" id="botleft">0</th>
+					<th class="th1" id="botmid">0</th>
+					<th class="th1" id="botright">0</th>
+					<td class="sum" id="sum3"></td>
+				</tr>
+				<tr>
+					<td class="blank"><p>.</p></td>
+					<td class="sum" id="sum7"></td>
+					<td class="sum" id="sum6"></td>
+					<td class="sum" id="sum5"></td>
+					<td class="sum" id="diag2"></td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>

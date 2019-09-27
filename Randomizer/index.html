@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<button onClick="window.location.href='../index.html';">Home</button>
+		<title>
+		Image Randomizer
+		</title>
+		<link rel="stylesheet" href="../style.css">
+		<h1 id="colors">
+		Welcome to the Image Randomizer!
+		</h1>
+	</head>
+	<body onLoad="main()">
+		<script type="text/javascript" src="../Scripts/rando.js"></script>
+		<h3 id="colors2">
+		Click the buttons below to begin the randomizer.
+		</h3>
+		<button onClick="main()">Click to change image.</button>
+		<button onClick="repeat()">Click to randomly cycle images.</button>
+		<button onClick="stop()">Click to stop cycle.</button><br>
+		<div align="center" id="pic"></div>
+	</body>
+</html>

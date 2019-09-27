@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <button onClick="window.location.href='../index.html';">Home</button>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="../style.css"></link>
+        <h1>Welcome to my calculator!</h1>
+    </head>
+    <body>
+        <script type="text/javascript" src="../Scripts/calc.js"></script>
+        <h3>Enter numbers below and select operator.</h3>
+        <form>
+            First number: <input type="number" id="fnum">
+            <select id="opera">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="mult">*</option>
+                <option value="div">/</option>
+                <option value="exp">**</option>
+            </select>
+            Second number: <input type="number" id="snum">
+        </form>
+        <button onClick="main()">Click to get answer</button>
+        <h3 id="answer" style="color: red"></h3>
+    </body>
+</html>

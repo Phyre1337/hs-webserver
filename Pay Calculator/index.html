@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<button onClick="window.location.href='../index.html';">Home</button>
+		<title>Pay Calculator</title>
+		<link rel="stylesheet" href="../style.css">
+		<center><h1>Christian's Payroll Calculator</h1></center>
+	</head>
+	<body>
+		<script type="text/javascript" src="../Scripts/pay.js"></script>
+		<h3>Enter numbers below to calculate total pay.</h3>
+		<br>
+		<table>
+			<tr>
+				<th class="displayth">Employee Name:</th>
+				<td class="displaytd"><input type="text" maxlength="20" size="14" id="name"></td>
+			</tr>
+			<tr>
+				<th class="displayth">Hourly Pay:</th>
+				<td class="displaytd"><input type="text" maxlength="4" size="6" id="pay"></td>
+			</tr>
+			<tr>
+				<th class="displayth">Hours Worked:</th>
+				<td class="displaytd"><input type="text maxlength="4" size="6" id="hours"></td>
+			</tr>
+			<tr>
+				<th class="displayth">Overtime Hours:</th>
+				<th class="displayth" id="displayothours"></th>
+			</tr>
+		</table><br>
+		<button id="b1" onClick="calculate()">Calculate</button>
+		<button id="b2" onClick="refresh()">Reset Numbers</button>
+		<br><br>
+		<table>
+			<tr>
+				<th class="displayth">Regular Pay:</th>
+				<th class="displayth" id="displaypay"></th>
+			</tr>
+			<tr>
+				<th class="displayth">Overtime Pay:</th>
+				<th class="displayth" id="displayotpay"></th>
+			</tr>
+			<tr>
+				<th class="displayth">Net Pay:</th>
+				<th class="displayth" id="displaynetpay"></th>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<th class="displayth" id="deductions">Deductions</th>
+			</tr>
+			<tr>
+				<th class="displayth">Federal Tax:</th>
+				<th class="displayth" id="displayfed"></th>
+			</tr>
+			<tr>
+				<th class="displayth">FICA:</th>
+				<th class="displayth" id="displayfica"></th>
+			</tr>
+			<tr>
+				<th class="displayth">State tax:</th>
+				<th class="displayth" id="displaystate"></th>
+			</tr>
+			<tr>
+				<th class="displayth">Insurance:</th>
+				<th class="displayth" id="displayinsurance"></th>
+			</tr>
+			<tr>
+				<th class="displayth">Total Deductions:</th>
+				<th class="displayth" id="totaldeducts"></th>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<th class="displayth" id="displaygross">Gross Pay:</th>
+				<th class="displayth" id="grosspay"></th>
+			</tr>
+		</table>
+		<p id="resetbutton"></p>
+	</body>
+</html>

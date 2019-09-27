@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<button onClick="window.location.href='../index.html';">Home</button>
+		<title>Easter Sunday Calculator</title>
+		<center><h1>Welcome to the Easter Sunday Calculator!</h1></center>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+		<script type="text/javascript" src="../Scripts/easter.js"></script>
+		<center><h3>Input the year below that you want to find what day Easter landed on.</h3></center>
+		<br>
+		<center><input type="text" id="year" maxlength="4" size="4" onkeypress="checkEnter(event)"></center>
+		<center><button onClick="main()">Calculate</button></center>
+		<center><h3 id="answer"></h3></center>
+	</body>
+</html>
